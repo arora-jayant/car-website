@@ -1,0 +1,339 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+
+<style>
+
+html, body{
+
+margin:0%;
+font-family: 'Acme', sans-serif;
+background-color:#45444a;
+}
+
+.header{
+
+width:100%;
+height:10%;
+background-color:black;
+color: red;
+
+}
+
+.headtext{
+
+background-color:black;
+height:20%;
+width:100%;
+text-align:center;
+font-size:75;
+color:white;
+}
+
+.logo{
+
+width:15%;
+height:19%;
+background-color:black;
+margin-top:-10%;
+margin-left:4%;
+}
+
+ul{
+
+list-style-type:none;
+margin:none;
+padding:none;
+background-color:#615c55;
+position:fixed;
+top:0;
+width:100%;
+}
+
+li{
+
+float:left;
+
+}
+
+li a, .dropbtn{
+
+display: inline-block;
+color:black;
+text-align:center;
+padding:14px;
+text-decoration:none;
+
+}
+
+li a:hover, dropdown:hover .dropbtn{
+
+background-color:white;
+
+}
+
+li.dropdown{
+
+display:inline-block;
+
+}
+
+.dropdowncontent{
+display:none;
+position:absolute;
+background-color:blue;
+text-align:center;
+}
+
+.dropdowncontent a{
+
+color:black;
+padding:12px;
+text-decoration:none;
+display:block;
+}
+
+.dropdowncontent a:hover{
+background-color:white;
+}
+
+.dropdown:hover .dropdowncontent{
+
+display:block;
+
+}
+
+.active{
+
+background-color:blue;
+
+}
+
+.content{
+
+width:100%;
+min-height:90%;
+background-color:grey;
+text-align:center;
+
+}
+
+.innerform{
+
+width:100%;
+min-height:45%;
+background-color:white;
+text-align:center;
+
+}
+
+.column {
+
+float:left;
+width:49.8%;
+background-color:white;
+border:solid black 0px;
+height:70%;
+
+}
+
+.row:after{
+
+content:"";
+display:table;
+clear:both;
+
+}
+
+.column1 {
+display:inline-block;
+float:left;
+width:25%;
+background-color:black;
+border:solid black 1px;
+height:64%;
+margin:2%;
+font-size:30;
+text-align:center;
+text-decoration:none;
+margin-left:4.3%;
+color:white;
+}
+
+.footer{
+
+width:100%;
+height:30%;
+background-color:black;
+color:white;
+}
+
+0@media (max-width:600px) {
+
+.column{
+
+width:50%;
+
+}
+
+}
+
+0@media (max-width:600px) {
+
+.column1{
+
+width:33.3%;
+
+}
+
+}
+
+</style>
+
+<title>Contact Us
+</title>
+</head>
+<body>
+
+<div class="header">
+
+
+<ul>
+
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+
+<li class="dropdown">
+<a href="gallery.html" class="dropbtn">Vehicles</a>
+<div class="dropdowncontent">
+
+<a href="form.html">Vehicle Reservation</a>
+</div></li>
+
+<li><a href="cars.html">Videos</a></li>
+
+
+<li class="dropdown">
+<a class="active" href="contact.html" class="dropbtn">Contact Us</a>
+<div class="dropdowncontent">
+<a href="inquiry.html">Inquiry Form</a>
+<a href="contact.html">Google Maps</a>
+<a href="form.html">Vehicle Reservation</a>
+</div></li>
+
+</ul>
+
+
+</div>
+
+
+<div class="headtext">
+
+
+Euro Car Rental<br>
+<font size="5">Toronto</font>
+
+<div class="logo">
+
+<img src="properlogo.png" width="65%" height="150" />
+
+
+</div>
+
+</div>
+
+
+<br>
+<div class="content">
+<font size="30">Questions?</font><br>
+<font size="5">Fill out the form below to get in contact with us about anything!</font><br><br>
+
+<div class="innerform">
+
+<form action="submitted.html" method="get">
+<fieldset>
+
+<h1><legend><b>Contact Us Form</b></legend></center></h3>
+<label>First Name:</label> <input type="text" name="name" placeholder="First Name" /> <br>
+<label>Last Name:</label> <input type="text" name="name" placeholder="Last Name" /> <br>
+<label>Email Address:</label> <input type="text" name="email" placeholder="Email" /> <br>
+<label>Telephone Number:</label> <input type="number" name="phnum" placeholder="Phone Number"/> <br>
+<label>Date Out:</label> <input type="date" name="phnum" placeholder="mm-dd-year"/> <br>
+<label>Date In:</label> <input type="date" name="phnum" placeholder="mm-dd-year"/> <br>
+<br>
+
+
+
+Vehicle<br>
+<select>
+<option>Choose a Vehicle (optional)</option>
+<option>Ferrari 488</option>
+<option>Mercedes-Benz G63 AMG</option>
+<option>McLaren P1</option>
+<option>Lamborghini Aventador SVJ</option>
+<option>Rolls Royce Phantom</option>
+<option>BMW 8 Series</option>
+<option>Porsche 911 GT3</option>
+<option>Bentley Continental GT</option>
+<option>Rolls Royce Dawn</option>
+<option>Mercedes-Benz Maybach S650</option>
+<option>Lamborghini Urus</option>
+<option>Rolls Royce Cullinan</option>
+</select><br><br>
+
+<textarea rows="4" cols="50" placeholder="Any feedback or questions? Feel free to type here!"></textarea><br>
+
+
+</fieldset>
+
+
+
+<br><br>
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset"/>
+
+</form>
+</div>
+</div>
+
+
+<div class="row">
+
+</div>
+
+<div class="footer">
+<div class="column1">
+<font color="white" size="4">
+
+<a href="home.html"><font color="white">Home</font></a><br>
+<a href="about.html"><font color="white">About</font></a><br>
+<a href="gallery.html"><font color="white">Vehicles</font></a><br>
+<a href="cars.html"><font color="white">Videos</font></a><br>
+<a href="contact.html"><font color="white">Contact Us</font></a>
+</font>
+</div>
+
+
+<div class="column1" style="margin-top:-0.01%;">
+
+<img src="properlogo.png"/>
+
+</div>
+
+
+
+
+<div class="column1">
+<font color="white" size="4">
+&copy; Copyright 2019, Euro Car Rentals Inc.
+<br>
+Visit our <a href="www.instagram.com">Instagram</a><br>
+Visit our <a href="www.facebook.com">Facebook</a><br>
+Click <a href="inquiry.html">here</a> to leave an inquiry.<br>
+Call Us: 1-800-416-CARS
+</font></div>
+</div>
+
+
+</body>
+</html>
